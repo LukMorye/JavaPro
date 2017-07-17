@@ -11,17 +11,14 @@ public class Main {
 
     public static void main(String[] args) {
         int size = 5;
-        SomeClass<Object>[] arr = new SomeClass[size];
+        Object[] arr = new Object[]{1,2,3,4,10};
+        System.out.println("\nReplaced simple array:");
+        Object[] newArray = replace(arr,1,3);
         for (int i = 0; i < size; i++) {
-            arr[i] = new SomeClass<>(i);
-        }
-        System.out.println("\nSimple array:");
-        SomeClass<Object>[] newArray = replace(arr,1,3);
-        for (int i = 0; i < size; i++) {
-            System.out.print(newArray[i].getObj() + ", ");
+            System.out.print(newArray[i] + ", ");
         }
         System.out.println("\nArray list:");
-        ArrayList<SomeClass<Object>> list = toArrayList(newArray);
+        ArrayList<Object> list = toArrayList(newArray);
         System.out.println(list.toString());
 /** В комментарии вызов 3-ей части домашнего задания
         Box<Orange> box1 = generatedOrangesBox(4);
@@ -55,19 +52,7 @@ public class Main {
 
 
 /** Part 1 */
-    private static class SomeClass<T extends Object> {
-        T obj;
-        public SomeClass(T obj) {
-            this.obj = obj;
-        }
-
-        public T getObj() { return obj; }
-
-        @Override
-        public String toString() { return obj.toString(); }
-    }
-
-    private static SomeClass<Object>[] replace(SomeClass<Object>[] array, int srcPosition, int dstPosition) {
+    private static <T> T[] replace(T[] array, int srcPosition, int dstPosition) {
         int size = array.length;
         if (srcPosition < 0 || srcPosition >=size) {
             throw new RuntimeException("Bad source element position: " + srcPosition);
@@ -75,18 +60,18 @@ public class Main {
         if (dstPosition < 0  || dstPosition >= size) {
             throw new RuntimeException("Bad destination element position: " + dstPosition);
         }
-        SomeClass<Object> tmp = array[srcPosition];
+        T tmp = array[srcPosition];
         array[srcPosition] = array[dstPosition];
         array[dstPosition] = tmp;
         return array;
     }
 
-    private static ArrayList<SomeClass<Object>> toArrayList(SomeClass<Object>[] array) {
+    private static <T>ArrayList toArrayList(T[] array) {
         if (array == null) {
             throw new RuntimeException("null array as argument");
         }
         int size = array.length;
-        ArrayList<SomeClass<Object>> list = new ArrayList<>(size);
+        ArrayList<T> list = new ArrayList<>(size);
         for (int i = 0; i < size; i++) {
             list.add(array[i]);
         }
