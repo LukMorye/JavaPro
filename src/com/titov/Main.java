@@ -13,12 +13,12 @@ public class Main {
         int size = 5;
         Object[] arr = new Object[]{1,2,3,4,10};
         System.out.println("\nReplaced simple array:");
-        Object[] newArray = replace(arr,1,3);
+         replace(arr,1,3);
         for (int i = 0; i < size; i++) {
-            System.out.print(newArray[i] + ", ");
+            System.out.print(arr[i] + ", ");
         }
         System.out.println("\nArray list:");
-        ArrayList<Object> list = toArrayList(newArray);
+        ArrayList<Object> list = toArrayList(arr);
         System.out.println(list.toString());
 /** В комментарии вызов 3-ей части домашнего задания
         Box<Orange> box1 = generatedOrangesBox(4);
@@ -52,7 +52,7 @@ public class Main {
 
 
 /** Part 1 */
-    private static <T> T[] replace(T[] array, int srcPosition, int dstPosition) {
+    private static <T> void replace(T[] array, int srcPosition, int dstPosition) {
         int size = array.length;
         if (srcPosition < 0 || srcPosition >=size) {
             throw new RuntimeException("Bad source element position: " + srcPosition);
@@ -63,7 +63,6 @@ public class Main {
         T tmp = array[srcPosition];
         array[srcPosition] = array[dstPosition];
         array[dstPosition] = tmp;
-        return array;
     }
 
     private static <T>ArrayList toArrayList(T[] array) {
