@@ -95,7 +95,7 @@ public class DBManager {
         try {
             ArrayList<String> list = new ArrayList<>();
 
-            ResultSet result =  statement.executeQuery("SELECT title FROM Products WHERE cost > " + from + " AND cost < " + to);
+            ResultSet result =  statement.executeQuery("SELECT title FROM Products WHERE cost >= " + from + " AND cost <= " + to);
             if (!result.next()) { return null; }
             while (result.next()) {
                  list.add(result.getString("title"));

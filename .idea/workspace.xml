@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c97eb832-0eaa-4c61-8138-3fc7348d89a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/sqlite-jdbc-3.19.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson1/Apple.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson1/Box.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson1/Fruit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson1/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson1/Orange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson2/DBManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson2/Main.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lesson1/lesson1.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lesson1/src/com/titov/Apple.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lesson1/src/com/titov/Box.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lesson1/src/com/titov/Fruit.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lesson1/src/com/titov/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lesson1/src/com/titov/Orange.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lesson2/lesson2.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lesson2/lib/sqlite-jdbc-3.19.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lesson2/src/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lesson1/com/titov/Apple.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lesson1/com/titov/Box.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lesson1/com/titov/Fruit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lesson1/com/titov/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lesson1/com/titov/Orange.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lesson1_homework/com/titov/Apple.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lesson1_homework/com/titov/Box.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lesson1_homework/com/titov/Fruit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lesson1_homework/com/titov/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lesson1_homework/com/titov/Orange.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_19_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_19_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homeworks.iml" afterPath="$PROJECT_DIR$/homeworks.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products_db.db" afterPath="$PROJECT_DIR$/products_db.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson2/DBManager.java" afterPath="$PROJECT_DIR$/src/lesson2/DBManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,21 +16,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="348">
               <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson2/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+            <state relative-caret-position="286">
+              <caret line="97" column="121" lean-forward="false" selection-start-line="97" selection-start-column="121" selection-end-line="97" selection-end-column="121" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -540,21 +512,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson2/DBManager.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="348">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson2/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson2/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="286">
+          <caret line="97" column="121" lean-forward="false" selection-start-line="97" selection-start-column="121" selection-end-line="97" selection-end-column="121" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
