@@ -1,4 +1,4 @@
-package com.titov;
+package lesson1;
 
 /**
  * Created by vtitov on 17.07.17.

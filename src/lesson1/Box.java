@@ -1,4 +1,4 @@
-package com.titov;
+package lesson1;
 
 import java.util.ArrayList;
 
