@@ -42,6 +42,7 @@ public class DBManager {
         try {
             statement.execute("CREATE TABLE IF NOT EXISTS Products (\n" +
                     " id    INTEGER PRIMARY KEY,\n" +
+                    " prod_id    INTEGER,\n" +
                     " title  TEXT,\n" +
                     " cost INTEGER\n" +
                     " );");
@@ -54,10 +55,11 @@ public class DBManager {
         try {
             statement.execute("DELETE FROM Products");
             connection.setAutoCommit(false);
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO Products (title, cost) VALUES(?,?)");
+            PreparedStatement ps = connection.prepareStatement("INSERT INTO Products (prod_id, title, cost) VALUES(?,?,?)");
             for (int i = 0; i < 10000; i++) {
-                ps.setString(1,"Товар " + (i+1));
-                ps.setInt(2,(i+1)*10);
+                ps.setInt(1, (i+1));
+                ps.setString(2,"товар" + (i+1));
+                ps.setInt(3,(i+1)*10);
                 ps.addBatch();
             }
             ps.executeBatch();
