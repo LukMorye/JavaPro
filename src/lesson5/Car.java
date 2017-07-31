@@ -34,7 +34,7 @@ public class Car implements Runnable {
 // Cyclic barrier -------------------------->>>>>>>
         System.out.println(name + " готовится");
         try {
-            Thread.sleep(REQUIRE_WAITING_TIME + (int)Math.random() * MAX_WAITING_TIME);
+            Thread.sleep(REQUIRE_WAITING_TIME + (int)(Math.random() * MAX_WAITING_TIME));
             System.out.println(name + " готов");
             ready.countDown();
             barrier.await();
