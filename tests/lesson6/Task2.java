@@ -7,7 +7,7 @@ public class Task2 {
 
     @Test
     public  void test1() {
-        int[] array = new int[]{1,4};
+        int[] array = new int[]{1};
         Assert.assertTrue(Lesson6.task2(array));
     }
 
